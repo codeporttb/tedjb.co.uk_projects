@@ -1,4 +1,4 @@
-/*-- start-of-general-styles --*/
+        /*-- start-of-general-styles --*/
 
         :root {
             --primary: #00aaff;
@@ -257,5 +257,3 @@
                 text-shadow: 0 0 15px rgba(0, 170, 255, 0.8), 0 0 20px rgba(0, 170, 255, 0.4);
             }
         }
-
-
