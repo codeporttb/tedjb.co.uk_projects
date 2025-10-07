@@ -1,4 +1,6 @@
-:root {
+/*-- start-of-general-styles --*/
+
+        :root {
             --primary: #00aaff;
             --primary-dark: #0088cc;
             --secondary: #ff6b6b;
@@ -17,6 +19,8 @@
             color: var(--light);
             line-height: 1.6;
         }
+
+        /*-- Nav --*/
 
         nav {
             background-color: rgba(26, 26, 26, 0.9);
@@ -59,7 +63,7 @@
             background: linear-gradient(135deg, var(--dark), var(--darker));
             padding: 100px 50px 50px;
             text-align: center;
-            margin-top: 60px;
+            margin-top: 3px;
             position: relative;
             overflow: hidden;
             border-bottom: 1px solid var(--primary);
@@ -82,7 +86,7 @@
             background: linear-gradient(90deg, var(--primary), var(--light));
             -webkit-background-clip: text;
             background-clip: text;
-            border-left: 4px solid var(--primary);
+             color: var(--primary);
             text-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
             letter-spacing: 2px;
         }
@@ -130,7 +134,7 @@
         }
 
         h3 {
-             font-family: 'Share Tech Mono', monospace;
+            font-family: 'Share Tech Mono', monospace;
             color: var(--light);
             font-size: 1.3rem;
             margin: 20px 0 10px;
@@ -144,6 +148,8 @@
             border-radius: 0 4px 4px 0;
             margin: 10px 0;
             line-height: 1.7;
+
+            /*-- Links-css --*/
         }
 
         .links a {
@@ -164,7 +170,7 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
         }
-
+        
         a {
            color: #0088cc;
         }
@@ -176,9 +182,11 @@
             background-color: 1xp var(--dark);
             border-top: 1px solid var(--gray);
             color: #aaa;
-            font-size: 0.5cm;
+            font-size: 2cqmin;
         }
 
+        /*-- Projects-css --*/
+        
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -235,6 +243,11 @@
                 grid-template-columns: 1fr;
             }
         }
+        
+          /*-- Glow-Effect --*/
+        .glow {
+            animation: glow 2s infinite alternate;
+        }
 
         @keyframes glow {
             from {
@@ -245,11 +258,4 @@
             }
         }
 
-        .project-detail {
-            margin-bottom: 50px;
-        }
-        
-        .back-link {
-            display: inline-block;
-            margin-top: 20px;
-        }
+
